@@ -82,53 +82,8 @@ const Menu = () => {
   ];
 
   return (
-    <div className="max-w-[1440px] mx-auto px-4 max-[428px]:px-0 max-[428px]:pb-[56px]">
-      <p className='font-[Sekuya] text-white text-[39px] text-center max-[428px]:mt-[72px] max-[428px]:text-[32px]'>Menu</p>
-
-      <div className="flex justify-center gap-6 mt-[29px] flex-wrap max-[428px]:gap-[14.4px] max-[428px]:justify-start max-[428px]:px-2">
-        <button className="w-[180.93px] h-[52px] rounded-[100px] bg-gradient-to-b from-[#FF5924] to-[#FFA229] shadow-[0px_9px_40px_0px_rgba(255,107,0,0.3)] text-white font-semibold transition-all duration-500 hover:scale-110 hover:shadow-[0px_15px_50px_0px_rgba(255,107,0,0.5)] active:scale-95 max-[428px]:w-[110px] max-[428px]:h-[38px] max-[428px]:rounded-[61px] max-[428px]:text-[13px]">
-          Show All
-        </button>
-
-        {["Meat", "Vegetarian", "Sea products", "Mushroom"].map((item) => (
-          <button
-            key={item}
-            className={`h-[52px] rounded-[100px] bg-[#210A01] border border-transparent shadow-[0px_9px_40px_0px_rgba(255,107,0,0.06)] text-white font-semibold transition-all duration-500 ease-in-out hover:bg-gradient-to-b hover:from-[#FF5924] hover:to-[#FFA229] hover:scale-110 hover:shadow-[0px_15px_50px_0px_rgba(255,107,0,0.4)] hover:rotate-1 active:scale-95 max-[428px]:h-[38px] max-[428px]:text-[13px] 
-            ${item === "Meat"
-                ? "max-[428px]:w-[80px] max-[1920px]:w-[180px]"
-                : "w-[180.93px] max-[428px]:w-[100px]"
-              }`}
-          >
-            {item}
-          </button>
-        ))}
-      </div>
-
-      <div className="flex max-[428px]:flex-wrap justify-center gap-x-[12px] gap-y-[60px] mt-[80px] px-4">
-        {pizzas.map((pizza, index) => (
-          <PizzaCard key={index} {...pizza} />
-        ))}
-      </div>
-
-      <div className='relative w-full h-[286px] max-[428px]:h-[150px] mt-[54px] mb-[112px] max-[428px]:mb-[80px] group overflow-hidden rounded-[34px] max-[428px]:rounded-[20px]'>
-        <img
-          className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-          src="./src/assets/pizza.jpg"
-          alt="Most Popular Pizza"
-        />
-        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          <p className='text-white text-[43.86px] max-[428px]:text-[20px] font-medium tracking-wider uppercase text-center drop-shadow-[0_11.59px_10.23px_rgba(14,4,4,0.38)]'>
-            Most Popular Pizza
-          </p>
-        </div>
-      </div>
-
-      <div className="flex max-[428px]:flex-wrap  justify-center gap-x-[12px] gap-y-[60px] mt-[120px] px-4">
-        {pizzas.map((pizza, index) => (
-          <PizzaCard key={index} {...pizza} />
-        ))}
-      </div>
+    <div>
+      <p>Menu</p>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
@@ -16,4 +17,12 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
+=======
+
+}
+body{
+  background-color: #1A0B05;
+
+
+>>>>>>> origin/aziz
 }
