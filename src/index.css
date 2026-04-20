@@ -1,5 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #210A01;
+  padding-left: 53px;
+  padding-right: 53px;
+
+}
+
+@media(max-width:428px) {
+  body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
